@@ -1,0 +1,6 @@
+{
+  "name": "Trend Breakout", "mode": "technical", "symbols": ["MU", "LITE", "ETN", "FCX", "ZIM"], "benchmark": "ACWI", "start": "2020-01-01",
+  "rules": {"fast_sma": 20, "slow_sma": 50, "rsi_min": 50, "rsi_max": 75, "breakout_days": 20, "min_volume_ratio": 1.2, "min_relative_strength_20d": 0, "max_prior_excess_30d": 0.30, "min_signal_count": 5, "require_breakout": true},
+  "trade": {"hold_sessions": 30, "stop_atr": 2.5, "take_atr": 5, "round_trip_cost_bps": 60, "max_concurrent": 3},
+  "evidence": {"lookback_days": 14}
+}

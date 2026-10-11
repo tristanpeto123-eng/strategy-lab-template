@@ -1,0 +1,10 @@
+{
+  "status": "LOCKED",
+  "verified_resolved_events": 0,
+  "winners": 0,
+  "losers": 0,
+  "sector_count": 0,
+  "minimum_events": 80,
+  "warning": "Price labels measure benchmark-relative outcomes, not whether shortages caused returns.",
+  "reason": "Need 80+ dated independent episodes, >=20 wins and >=20 losses across >=3 sectors."
+}

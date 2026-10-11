@@ -1,0 +1,4 @@
+const CACHE='strategy-lab-static-v1';const STATIC=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
+self.addEventListener('install',ev=>{ev.waitUntil(caches.open(CACHE).then(c=>c.addAll(STATIC)).then(()=>self.skipWaiting()))});
+self.addEventListener('activate',ev=>{ev.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
+self.addEventListener('fetch',ev=>{let url=new URL(ev.request.url);if(url.origin!==self.location.origin)return;if(url.pathname.includes('/data/')||url.pathname.includes('/results/')||url.pathname.includes('/strategies/')){ev.respondWith(fetch(ev.request).catch(()=>caches.match(ev.request)));return;}ev.respondWith(fetch(ev.request).then(resp=>{let clone=resp.clone();caches.open(CACHE).then(c=>c.put(ev.request,clone));return resp}).catch(()=>caches.match(ev.request)))});

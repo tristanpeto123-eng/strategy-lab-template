@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-10-11T18:17:28.418172+00:00",
+  "strategies": [
+    {
+      "strategy_file": "strategies/evidence_confirmed.json",
+      "name": "Verified Shortage + Chart",
+      "mode": "verified_evidence",
+      "all_trades": 0,
+      "in_sample_trades": 0,
+      "holdout_trades": 0,
+      "mean_excess_insample_pct": null,
+      "mean_excess_holdout_pct": null,
+      "holdout_start": "2025-06-03",
+      "embargo_days": 90,
+      "do_not_select_using_holdout": true
+    },
+    {
+      "strategy_file": "strategies/relaxed_trend.json",
+      "name": "Relaxed Trend",
+      "mode": "technical",
+      "all_trades": 301,
+      "in_sample_trades": 219,
+      "holdout_trades": 70,
+      "mean_excess_insample_pct": -0.014,
+      "mean_excess_holdout_pct": 1.55,
+      "holdout_start": "2025-06-03",
+      "embargo_days": 90,
+      "do_not_select_using_holdout": true
+    },
+    {
+      "strategy_file": "strategies/trend_breakout.json",
+      "name": "Trend Breakout",
+      "mode": "technical",
+      "all_trades": 155,
+      "in_sample_trades": 115,
+      "holdout_trades": 36,
+      "mean_excess_insample_pct": 0.503,
+      "mean_excess_holdout_pct": 2.608,
+      "holdout_start": "2025-06-03",
+      "embargo_days": 90,
+      "do_not_select_using_holdout": true
+    }
+  ],
+  "warning": "In-sample performance is not a forward forecast; 90-day embargo is applied to this descriptive holdout."
+}

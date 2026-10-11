@@ -1,0 +1,61 @@
+{
+  "config": {
+    "name": "Verified Shortage + Chart",
+    "mode": "verified_evidence",
+    "symbols": [
+      "MU",
+      "LITE",
+      "ETN",
+      "FCX",
+      "ZIM"
+    ],
+    "benchmark": "ACWI",
+    "start": "2020-01-01",
+    "rules": {
+      "fast_sma": 20,
+      "slow_sma": 50,
+      "rsi_min": 45,
+      "rsi_max": 80,
+      "breakout_days": 20,
+      "min_volume_ratio": 1.0,
+      "min_relative_strength_20d": 0,
+      "max_prior_excess_30d": 0.3,
+      "min_signal_count": 4,
+      "require_breakout": false
+    },
+    "trade": {
+      "hold_sessions": 30,
+      "stop_atr": 2.5,
+      "take_atr": 5,
+      "round_trip_cost_bps": 60,
+      "max_concurrent": 3
+    },
+    "evidence": {
+      "lookback_days": 14
+    },
+    "end": "2026-10-11"
+  },
+  "stats": {
+    "trades": 0,
+    "win_rate_pct": null,
+    "mean_trade_pct": null,
+    "mean_excess_pct": null,
+    "median_excess_pct": null,
+    "fraction_beating_benchmark": null,
+    "note": "Trade-average metrics, not portfolio CAGR or risk-adjusted alpha. Signals are retrospective simulation; slippage and news timestamps may differ in practice."
+  },
+  "trades": [],
+  "rejected_counts": {
+    "no_verified_evidence": 8235,
+    "insufficient_bars_or_chart": 0,
+    "benchmark_missing": 0
+  },
+  "evidence_events_loaded": 0,
+  "chart_data_symbol_count": 6,
+  "notes": [
+    "No lookahead: completed signal close, entry next open; stop-first conservative intraday tie.",
+    "Market data is survivorship-biased if symbols are selected from today; compare against proper historical universe.",
+    "Verified evidence mode requires explicitly verified and publicly dated events; no events means no evidence trades.",
+    "This is a research backtest, not a proof of profitability or a live order."
+  ]
+}
