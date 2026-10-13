@@ -33,7 +33,7 @@
     "evidence": {
       "lookback_days": 14
     },
-    "end": "2026-10-11"
+    "end": "2026-10-13"
   },
   "stats": {
     "trades": 0,
@@ -46,7 +46,7 @@
   },
   "trades": [],
   "rejected_counts": {
-    "no_verified_evidence": 8235,
+    "no_verified_evidence": 8240,
     "insufficient_bars_or_chart": 0,
     "benchmark_missing": 0
   },
