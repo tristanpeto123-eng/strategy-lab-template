@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T01:17:37.134881+00:00",
+  "generated_at": "2026-10-20T01:48:13.974097+00:00",
   "strategies": [
     {
       "strategy_file": "strategies/evidence_confirmed.json",
@@ -10,7 +10,7 @@
       "holdout_trades": 0,
       "mean_excess_insample_pct": null,
       "mean_excess_holdout_pct": null,
-      "holdout_start": "2025-06-07",
+      "holdout_start": "2025-06-10",
       "embargo_days": 90,
       "do_not_select_using_holdout": true
     },
@@ -19,11 +19,11 @@
       "name": "Relaxed Trend",
       "mode": "technical",
       "all_trades": 302,
-      "in_sample_trades": 219,
+      "in_sample_trades": 220,
       "holdout_trades": 71,
-      "mean_excess_insample_pct": -0.014,
-      "mean_excess_holdout_pct": 0.89,
-      "holdout_start": "2025-06-07",
+      "mean_excess_insample_pct": -0.045,
+      "mean_excess_holdout_pct": 0.873,
+      "holdout_start": "2025-06-10",
       "embargo_days": 90,
       "do_not_select_using_holdout": true
     },
@@ -35,8 +35,8 @@
       "in_sample_trades": 115,
       "holdout_trades": 37,
       "mean_excess_insample_pct": 0.503,
-      "mean_excess_holdout_pct": 1.544,
-      "holdout_start": "2025-06-07",
+      "mean_excess_holdout_pct": 1.513,
+      "holdout_start": "2025-06-10",
       "embargo_days": 90,
       "do_not_select_using_holdout": true
     }
