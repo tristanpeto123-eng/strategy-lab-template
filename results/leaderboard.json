@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T02:24:09.135758+00:00",
+  "generated_at": "2026-10-30T02:34:45.994228+00:00",
   "strategies": [
     {
       "strategy_file": "strategies/evidence_confirmed.json",
@@ -10,7 +10,7 @@
       "holdout_trades": 0,
       "mean_excess_insample_pct": null,
       "mean_excess_holdout_pct": null,
-      "holdout_start": "2025-06-17",
+      "holdout_start": "2025-06-18",
       "embargo_days": 90,
       "do_not_select_using_holdout": true
     },
@@ -22,8 +22,8 @@
       "in_sample_trades": 221,
       "holdout_trades": 71,
       "mean_excess_insample_pct": -0.065,
-      "mean_excess_holdout_pct": 0.896,
-      "holdout_start": "2025-06-17",
+      "mean_excess_holdout_pct": 0.879,
+      "holdout_start": "2025-06-18",
       "embargo_days": 90,
       "do_not_select_using_holdout": true
     },
@@ -33,10 +33,10 @@
       "mode": "technical",
       "all_trades": 156,
       "in_sample_trades": 115,
-      "holdout_trades": 37,
+      "holdout_trades": 36,
       "mean_excess_insample_pct": 0.503,
-      "mean_excess_holdout_pct": 1.554,
-      "holdout_start": "2025-06-17",
+      "mean_excess_holdout_pct": 1.368,
+      "holdout_start": "2025-06-18",
       "embargo_days": 90,
       "do_not_select_using_holdout": true
     }
