@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T04:36:59.545330+00:00",
+  "generated_at": "2026-11-11T02:45:24.284432+00:00",
   "strategies": [
     {
       "strategy_file": "strategies/evidence_confirmed.json",
@@ -22,7 +22,7 @@
       "in_sample_trades": 222,
       "holdout_trades": 68,
       "mean_excess_insample_pct": -0.094,
-      "mean_excess_holdout_pct": 0.524,
+      "mean_excess_holdout_pct": 0.51,
       "holdout_start": "2025-06-27",
       "embargo_days": 90,
       "do_not_select_using_holdout": true
